@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;    
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/bigBG";
+@import "blocks/product";
+@import "blocks/textPart";
+@import "blocks/footer";
+@import "blocks/hamburger";
+@import "blocks/modal";
+@import "blocks/forms";
+@import "blocks/pageup";
+/* @import "blocks/media"; */
