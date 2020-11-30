@@ -2,374 +2,1313 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleble=0">
-    <meta name="description" content="Автомобильные диагностические Bluetooth WiFi сканеры Elm327 V1.5 V2.1 в Краснодаре"><!-- вписываются ключевые слова для сео -->
+    <meta name="viewport" content="width=device-width"> <!-- , initial-scale=1.0, maximum-scale=1.0, user-scaleble=0 -->
+    <meta name="description" content="  магазин ~КАПЕЛЬКА~  Бесплатная доставка воды по Тахтамукайскому району (Энем, Тахтамукай, Новый сад, Суповский, Отрадный, Афипские дачи, Яблоновский, Козет) тел.8 918-313-65-11 Заказ с 8.00 до 20.00">
+    <meta name="keywords" content="энем доставка воды, тахтамукай доставка воды, бесплатная доставка воды энем, вода 19л доставка тахтамукайский район">
     <meta name="author" content="konovalov oleg">
-    <meta name="yandex-verification" content="03f31cf6f1542a16" />
-    <title>ELM327Krasnodar</title> <!-- надпись в закладке в браузере -->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="yandex-verification" content="51ce49a2e59f0857" />
 
+    <title> Капелька - Доставка воды </title> 
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(66453988, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/66453988" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    
-    <header class="header" id="up">             
-        <nav class="nav">
-            <div class="nav_container">
+    <div class="bg"></div>
+    <header class="header">             
+        <div class="headerTop">
+            <div class="grid">
                 <div class="flex-container">
-                    <div class="logo">
-                        <img src="icons/лого.png" alt="logotip">
+                    <div class="leftBlock" >
+                        <div class="logo">
+                            <img src="icons/logo.png" alt="logotip">
+                        </div>
+                        <!-- <div class="autoHelp">Капелька</div> -->
                     </div>
+                    
+                    <div class="rightBlock">
+                        <h1 class="centralBlock">    
+                            Бесплатная Доставка Воды <br> по Тахтамукайскому району <br>
+                            <span>Энем, Тахтамукай, Суповский, Отрадный, Козет и другие</span>
+                        </h1>
+        
+                        <div class="contacts">
+                            <div class="tel">
+                                <a href="tel:+79183136511" >8 918-313-65-11</a>
+                            </div>
+                            <div class="address">
+                                п.Энем, ул.Перова 24/1
+                            </div>
+                                    
+                        </div>        
+                    </div>           
+              
+                </div>
+                
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="grid">
+                <nav>
                     <ul class="menu">
-                        <li class="menu_item"><a href="#pic" class="menu_link">О чипе PIC18F25K80</a></li>
-                        <li class="menu_item"><a href="#soft" class="menu_link">Программы для ELM327</a></li>
+                        <li class="menu_item"><a href="#about" class="menu_link"> О нас</a></li>
+                        <li class="menu_item"><a href="#delivery" class="menu_link">Доставка</a></li>
                         <li class="menu_item"><a href="#cont" class="menu_link">Контакты</a></li>
                     </ul>
-                    
-                </div> 
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>   
+                    <!-- <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
     
                        
-   <section  class="promo">
-        <div class="promo_img"> 
+    <section  class="promo" id="up">
+        <div class="whiteCard">
             
-
-            <picture>
-                <source srcset="img/promo320.jpg" type="image/jpeg" media="(max-width:320px)">
-                <source srcset="img/promo575.jpg" type="image/jpeg" media="(max-width:575px)">  
-                <source srcset="img/promo767.jpg" type="image/jpeg" media="(max-width:767px)">
-                <source srcset="img/promo991.jpg" type="image/jpeg" media="(max-width:991px)">
-                <source srcset="img/promo1199.jpg" type="image/jpeg" media="(max-width:1200px)">
-                <source srcset="img/promo1500.jpg" type="image/jpeg" media="(max-width:1500px)">
-                <source srcset="img/promo2000.jpg" type="image/jpeg" media="(min-width:1500px)">     
-                <img src="img/promo2000.jpg" alt="заставка"> 
-            </picture>
-        </div>  
-        <div class="promo_descr">
-            <div><h1>ELM327 V1.5 V2.1</h1></div> 
+            <h2 class="txt">
+                При заказе от 6<br>19-ти литровых<br>бутылей <span>скидка</span> 10 р.<br>на каждую бутыль
+            </h2>
             
-            <div class="main">
-            Автомобильные диагностические сканеры 
-            </div>
-            <div class="vkrd">
-                Только в Краснодаре
-            </div>
-            <div class="paragraphs1">
-                -Доставка прямо сейчас и БЕСПЛАТНО
-            </div>
-            <div class="paragraphs2">
-                -Подбор и настройка БЕСПЛАТНО
-            </div>
-        </div> 
+        </div>
+        
         
     </section> 
 
-   <div class="bigBG">
-
-        <div class="bigBG_wrap">
-            <section class="product">
-                <div class="product_wrap">
-                    <div class="catalog-item">
-                        <h2 class="catalog-item__subtitle">ЕЛМ 327 Bluetooth V1.5<br>
-                        на микропроцессоре PIC18F25K80</h2>
-                        <div class="img15blue"><img src="img/elm327blueV1.5.png" alt="elm327bluetoothV1.5"></div>
-                        <button data-modal="order" class="orderbtn">1400р/Заказать
-                        </button>
-                        
-                    </div>
-                    <button data-modal="about15" class="box_btn15">Узнать подробнее<br>
-                        о ELM V1.5
-                    </button>
-                    
-        
-                    <div class="catalog-item">
-                        <div class="catalog-item__subtitle">ЕЛМ 327 WiFi V1.5 mini<br>
-                        на микропроцессоре PIC18F25K80</div>
-                        <div class="img15wifi"><img src="img/elm327WiFiV1.5mini.png" alt="elm327wifiV1.5"></div>
-                        <button data-modal="order" class="orderbtn">1400р/Заказать
-                        </button>
+    <section class="goods">
+        <div class="grid">
+            <h2 class="goodsTitle" id="aqua">
+                Вода
+            </h2>
+            <div class="goodsWrapAqua">
+                <div class="cardWrap">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/prirodnIstochnik.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Природный источник</div>
+                            <div class="cost">100 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button id="a1" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="product_wrap">
-                    <div class="catalog-item">
-                        <div class="catalog-item__subtitle">ЕЛМ 327 Bluetooth V2.1</div>
-                        <div class="img21blue"><img src="img/elm327blueV2.1.png" alt="elm327bluetoothV2.1"></div>
-                        <button data-modal="order" class="orderbtn">1100р/Заказать
-                        </button>
-                    </div>
-                    
-                    <button data-modal="about21" class="box_btn21">Узнать подробнее<br>
-                        о ELM V2.1
-                    </button>
-                    
-        
-                    <div class="catalog-item">
-                        <div class="catalog-item__subtitle">ЕЛМ 327 WiFi V1.5 <br>
-                            на микропроцессоре PIC18F25K80</div>
-                        <div class="img21wifi"><img src="img/elm327WiFiV1.5.png" alt="elm327wifiV1.5"></div>
-                        <button data-modal="order" class="orderbtn">1600р/Заказать
-                        </button>
-                    </div>            
-                </div>    
-            </section>
-    
-            <div class="textPart">
-                <section id="chip" class="chip">
-                    <h2 id="pic">Микроконтроллер pic18f25k80 в ELM327</h2>
-                    <div class="chip_descr">                             PIC18F25K80 - это высокопроизводительный        8-разрядный микроконтроллер преобразовывающий ряд     протоколов, которые используются в диагностических   шинах автомобилей, в стандартный последовательный     протокол RS-232. Данный чип используется в ЕЛМ327   версии 1.5 Наличие этого чипа в ELM327 говорит о  его более  широком функционале, чем у копий данного  адаптера с другой маркировкой, которые в лучшем  случае будут с урезанными возможностями или     вовсе не работать.
-                    </div>
-                </section>
-    
-                <section id="program" class="program">
-                    <div class="program_wrap">
-                        <h2 id="soft">программы для работы с елм327</h2>
-                        <div class="program_wrap_descr">
-                            ELM327 один из самых доступных автомобильных диагностических bluetooth WiFi автосканеров с возможностью быстрого считывания и расшифровки кодов ошибок вашего автомобиля через протокол OBD II. Для взаимодействия сканера подключенного к автомобилю с внешним устройством, необходимо скачать и установить приложение для андройд, IOS или Windows. На данный момент приложений для ЕЛМ327 великое множество, как платных, так и бесплатных, и в них сложно запутаться.                  
+                <div class="cardWrap">
+                    <div class="card" id="a2">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/zhivayaVoda.png" alt="aqua">
                         </div>
-                        <div class="program_wrap_subtitle">перечень самых популярных</div>
-                        <div class="program_wrap_block">
-                            <div class="program_wrap_block_mini">
-                                <div class="program_wrap_block_mini_subsub">
-                                    для Android по bluetooth и WiFi
-                                </div>
-                                <ul class="list">
-                                    <li>
-                                        <div class="dash"></div>Car Scaner(для отечественных авто)
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>Torque
-                                
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>DashCommand
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>OBD Авто Доктор
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>CARISTA (для VAG)
-                                       
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>EconTool ELM327 for Nissan  (для старых протоколов)
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>OpenDiagMobile   (для отечественных авто)
-                                       
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>ELMScan Toyota(v1.5)
-                                    </li>
-                                </ul>
+                        <div class="descr">
+                            <div class="name">Живая вода</div>
+                            <div class="cost">100 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
                             </div>
-                            <div class="program_wrap_block_mini">
-                                <div class="program_wrap_block_mini_subsub">
-                                    для IOS через адаптеры по WiFi
-                                </div>
-                                <ul class="list">
-                                    <li>
-                                        <div class="dash"></div>DashCommand
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>OBD Car Doctor
-                                       
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>Engine Link
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="program_wrap_block_mini">
-                                <div class="program_wrap_block_mini_subsub">
-                                    для Windows
-                                </div>
-                                <ul class="list">
-                                    <li>
-                                        <div class="dash"></div>Scanmaster
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>PCMScan
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>FORScan(для форд)
-                                       
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div> ELMConfig
-                                        
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>OpenDiagPro
-                                    </li>
-                                    <li>
-                                        <div class="dash"></div>Tiggo Diag   (для Chery, Great Wall)
-                                    </li>
-                                </ul>
-                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
                         </div>
-    
                     </div>
-    
-                </section>
-        
-                <section class="marketing">
-                    <h2 class="subheader">Мы экономим ваши деньги и время!!!
-                    </h2>
-                    <div class="subbody">
-                        Загорелся <span class="check">CHECK</span>? НЕ плати сервисам! Купи ELM327-узнай причину сам. Следующая диагностика-бесплатная. <br>
-                        Не знаете какой ЕЛМ327 выбрать? Bluetooth или WiFi?  V1.5 или V2.1? 
-                    </div>
-                    <div class="subheader">Мы поможем Вам!                
-                    </div>
-                    <ul class="paragraphs">
-                        <li>
-                            <div class="dash"></div>Приедем с разными адаптерами ЕЛМ327 и подберем оптимальный для вашего конкретного автомобиля
-                        </li>
-                        
-                        <li>
-                            <div class="dash"></div>Поможем скачать необходимый софт и настроить сканер для вашего android или ios
-                        </li>
-                        <li>
-                            <div class="dash"></div>Просканируем ваш автомобиль
-                        </li>
-                        <li>
-                            <div class="dash"></div>Выявим причину загорания контрольной лампы <span class="check">CHECK</span>, при необходимости сбросим ошибки
-                        </li>
-                    </ul>
-    
-                   
-        
-                    <h2 class="subheader">Преимущества                
-                    </h2>
-        
-                    <div class="privilege">
-                        <div class="element">
-                            <div class="icons"><img src="icons/2icon.svg" alt="доставка"></div>
-                            <div>Доставка по Краснодару в день заказа или на следующий день 
-                            </div>                
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a3">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/kristalnaya.png" alt="aqua">
                         </div>
-                        <div class="element">
-                            <div class="icons"><img src="icons/3icon.svg" alt="помощь"></div><div>
-                                Помощь в подборе и настройке оборудования                 
+                        <div class="descr">
+                            <div class="name">Кристальная</div>
+                            <div class="cost">100 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
                             </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
                         </div>
-                        <div class="element">
-                            <div class="icons"><img src="icons/1icon.svg" alt="возврат"></div><div>Возврат денежных средств или обмен на новый при неисправности                        
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a4">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/gorniyHrustal.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Горный хрусталь</div>
+                            <div class="cost">100 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
                             </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
                         </div>
-                    </div>         
-                </section>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a5">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/prestig.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Престиж</div>
+                            <div class="cost">110 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a6">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/GorKluch.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Горячий ключ 2000</div>
+                            <div class="cost">110 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a7">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/triumff.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Триумф</div>
+                            <div class="cost">120 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a8">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/serebrKaplya.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Серебряная капля</div>
+                            <div class="cost">120 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a9">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/logoNaki.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Дыхание Лаго-Наки</div>
+                            <div class="cost">130 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a10">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/garmoniya.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Гармония</div>
+                            <div class="cost">150 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a11">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/darzah.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Дарзах</div>
+                            <div class="cost">150 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a12">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/dombay.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Домбай</div>
+                            <div class="cost">150 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a13">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/zhemchKavkaza.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Жемчужина Кавказа</div>
+                            <div class="cost">160 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a14">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/vesnushka.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Веснушка</div>
+                            <div class="cost">170 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a15">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/kubay.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Кубай</div>
+                            <div class="cost">180 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a16">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/gornayaVershina.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Горная вершина</div>
+                            <div class="cost">190 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a17">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/prezidium.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Президиум</div>
+                            <div class="cost">190 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a18">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/pilligrim.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Пилигрим</div>
+                            <div class="cost">200 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a19">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/legendaGor.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Легенда гор Архыз</div>
+                            <div class="cost">210 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrap">
+                    <div class="card" id="a20">
+                        <div class="photo">
+                            <img src="/goods/aqua/photo/elbrusinka.png" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">Эльбрусинка</div>
+                            <div class="cost">210 р.</div>
+                            <div class="volume">
+                                <div class="left">Объём</div>
+                                <div class="right">19 литров</div>
+                            </div>
+                            <button data-modal="order" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="btnWrap">
+                <a href="#aqua" data-modal="moreAqua" class="btnMore">Смотреть ещё...
+                </a>
+                
+               
+            </div>
+
+
+
+            <div class="goodsTitle" id="kuler">
+                Кулеры
+            </div>
+            <div class="goodsWrapKuler">
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork36tdnWhite.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 36tdn<br>White</div>
+                            <div class="cost">3320 р.</div>
+                            <button id="q1" class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquawork07tdSilver.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 07td<br>Silver</div>
+                            <div class="cost">3650 р.</div>
+                            <button id="q2"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork07ld-bWhite.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 07Ld-b<br>White</div>
+                            <div class="cost">4500 р.</div>
+                            <button id="q3"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork36tdnStSilver.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 36tdn St<br>Silver</div>
+                            <div class="cost">4800 р.</div>
+                            <button id="q4"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork07ldrWhite.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 07Ldr<br>White</div>
+                            <div class="cost">4900 р.</div>
+                            <button id="q5"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork07ldrSilver.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 07Ldr<br>Silver</div>
+                            <div class="cost">5270 р.</div>
+                            <button id="q6"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquawork16l-hln-whiteblue.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 16L-hln<br>White-Blue</div>
+                            <div class="cost">7550 р.</div>
+                            <button id="q7"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork16-L.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 16-L<br>White</div>
+                            <div class="cost">7800 р.</div>
+                            <button id="q8"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork95LWhite.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 95L<br>White </div>
+                            <div class="cost">8200 р.</div>
+                            <button id="q9"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWorkYlr2-5-v908White.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork Ylr2-5-v908<br>White</div>
+                            <div class="cost">8400 р.</div>
+                            <button id="q10"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWork16L-EN-white.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 16L-EN<br>White</div>
+                            <div class="cost">8880 р.</div>
+                            <button id="q11"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquawork16l-en-red.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 16L-EN<br>Red</div>
+                            <div class="cost">8970 р.</div>
+                            <button id="q12"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquawork16l-en-st.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork 16L <br> EN-ST</div>
+                            <div class="cost">9250 р.</div>
+                            <button id="q13"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWorkYl1447sWhite.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork Yl1447s<br>White</div>
+                            <div class="cost">15600 р.</div>
+                            <button id="q14"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardWrapKuler">
+                    <div class="card">
+                        <div class="photo">
+                            <img src="/goods/kuler/photo/aquaWorkTy-lwyr71tBlack.jpg" alt="aqua">
+                        </div>
+                        <div class="descr">
+                            <div class="name">AquaWork Ty-lwyr71t <br>Black</div>
+                            <div class="cost">15930 р.</div>
+                            <button id="q15"  class="btn">
+                                Подробнее...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+
+            <div class="btnWrap">
+                <a href="#kuler" data-modal="moreKuler" >Смотреть ещё...
+                </a>
+            </div>
+
+            <div class="smollGoodsWrap">
+                <div class="smollGoods">
+                    В нашем ассортименте также есть мелкоразливные напитки, бытовая продукция (туалетная бумага, салфетки, одноразовая посуда и т.д.)
+                </div>
+                <div class="photoSmollGoods">
+                    <div class="photo">
+                        <img src="/goods/voda.jpg" alt="product">
+                    </div>
+                    <div class="photo">
+                        <img src="/goods/soputs.jpg" alt="product">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="aboutUs" id="about">
+       <div class="grid">
+           <div class="aboutUsTitle">О нас</div>
+           <div class="iconsWrap">
+                <div class="adventeges">
+                    <div class="icons"><img src="/icons/old.svg" alt="old">
+                    </div>
+                    <h3 class="icDescr">
+                    Более 10 лет<br>на рынке
+                    </h3>
+                </div>
+                <div class="adventeges">
+                    <div class="icons"><img src="/icons/car.svg" alt="car">
+                    </div>
+                    <h3 class="icDescr">
+                    Бесплатная доставка
+                    </h3>
+                </div>
+            
+            
+                <div class="adventeges">
+                    <div class="icons"><img src="/icons/hends.svg" alt="hends">
+                    </div>
+                    <h3 class="icDescr">
+                    Нам доверяют наши<br>клиенты (школы, сады,<br>администрация и офисы)
+                    </h3>
+                </div>
+                <div class="adventeges">
+                    <div class="icons"><img src="/icons/control.svg" alt="control">
+                    </div>
+                    <h3 class="icDescr">Проверка<br>качества воды</h3>
+                </div>   
+           </div>
+       </div>
+    </section>
+
+    <section class="delivery" id="delivery">
+        <div class="grid">
+            <div class="delivWrap">
+                <h3 class="destrib">
+                    Официальный дистрибьютор Аквалайн более 10 лет
+                </h3>
+                <div class="aqualine">
+                    <img src="/icons/aqualine.png" alt="aqualine">
+                </div>
+                <div class="delivTitle">
+                    Доставка
+                </div>
+                <h2 class="infoVillage">
+                    Бесплатно доставим воду в Энем, Тахтамукай, Новый сад, Суповский, Отрадный, Афипские дачи, Яблоновский, Козет и другие близлежайшие населённые пункты по предварительной договорённости. <br>Доставка осуществляется в три рейса <br>
+                    с 10:00 до 13:00 <br>с 13:00 до 16:00 <br>с 16:00 до 20:00 <br> Прием заказов с 8:00 до 17:00. <br>С 17:00 до 20:00 заказы принимаются на следующий день.
+                </h2>
+                <div class="delivTitle">
+                    Поддержка клиентов
+                </div>
+                <div class="infoVillage">
+                    Мы заботимся о качестве обслуживания наших клиентов. Если у вас есть просьбы, пожелания, заявления, жалобы, Вы можете позвонить нам по телефону 8 918 633 00 02 или написать. <br> Мы с радостью отреагируем на Ваше обращение, чтобы сделать наш сервис еще лучше. 
+                </div>
+                
+
+                <div class="btnWrap">
+                    <a href="#" data-modal="support" >Написать в службу поддержки
+                    </a>
+                </div>
+
             </div>
         </div>
+    </section>
 
-    </div>
-
-    <footer>
+   <footer>
         <div id="cont" class="footer">
-           <div class="box_footer">
-                <div class="first_column">
-                    <div class="time">Мы работаем для вас ежедневно с 9.30 до 20.30</div>
-                    <div class="kr"> Краснодар 2020 </div>
-                </div>    
-                <div class="second_column">
-                    <div class="tel">8-918-691-70-61</div>
-                    <div class="social">
-                        <div class="inst"><a href="https://www.instagram.com/p/B-Z_9uZKAFg/?igshid=16idhtetbchpi"><img src="icons/instagram.svg" alt="inst"></a> 
-                        </div>
-                        <div class="whatsapp">
-                            <a href="https://wa.me/79186917061"><img src="icons/whatsapp.png" alt="whatsapp"></a>
+            <div class="grid">
+                <div class="contacts">
+                    <div class="card">
+                        <div class="string1">Доставка воды по <br> Тахтамукайскому району</div>
+                        <a href="tel:+79183136511" class="menu_link">
+                            +7(918) 313-65-11
+                        </a>
+                        <div class="string2">
+                            п.Энем, ул.Перова 24/1
                         </div>
                     </div>
-                </div>            
+                    
+                    <div class="card">
+                        <div class="string1">Режим работы</div>
+                        <div class="string2"> С 8:00 до 20:00 (лето)</div>
+                        <div class="string2"> С 8:00 до 19:00 (зима)</div>
+                        
+                        <div class="social">
+                            
+                            <div class="inst"><a href="https://www.instagram.com/p/CDK95E-FC1V/?igshid=168dgr2qnv6hk"><img src="icons/instagram.svg" alt="inst"></a> 
+                            </div>
+                            <div class="whatsapp">
+                            <a href="https://wa.me/79183136511"><img src="icons/whatsapp.png" alt="whatsapp"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>   
             </div>
+            
+                   
+            
         </div>
-    </footer>       
+    </footer>
+
+    
     <div class="overlay"> <!-- обертка с затемнением сайта -->
         
 
-        <div class="modal" id="order">
+        <div class="modal" id="support">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">
-                Ваш заказ
+                Ваше обращение в службу поддержки клиентов
             </div>
             <div class="modal__descr">
-                ELM327 v1.5 Bluetooth
+                
             </div>
             <form class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Ваш телефон" type="number">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button_submit">купить</button>
+                
+                <textarea name="comment" required placeholder="Текст обращения" cols="100" rows="5"></textarea>
+                
+                <button class="button_submit">Отправить</button>
                 
             </form>
         </div>
         <div class="modal modal_mini" id="thanks">
             <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__subtitle">Спасибо за обращение!</div>
             <div class="modal__descr">
-                Наш менеджер свяжется с Вами в ближайшее время!
+                Мы рассмотрим ваше заявление и сообщим о результатах проверки!
             </div>
         </div>
-        <div class="modal modal_mini" id="about15">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">ELM327 V1.5</div>
-            <div class="modal__descr">
-                Bluetooth ELM327 V1.5- это диагностический сканер построенный на микроконтролере PIC18F2580 очень успешной китайской копии Microchip PIC18F2480 разработанной канадской компанией ELM Electronics.Китайский адаптер с прошивкой версии 1.5 полностью копирует оригинальную прошивку версии 1.4b и работает очень достойно,не уступая оригиналу стоящему в разы дороже. Сканеры с данной прошивкой V1.5 выпускаются в разных корпусах. Могут быть Bluetooth, WiFi и USB.
-            </div>
-        </div>
-        <div class="modal modal_mini" id="about21">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">ELM327 V2.1</div>
-            <div class="modal__descr">
-                Bluetooth ELM327 V2.1- это диагностический сканер построенный на собственной китайской элементной базе(STM32F042, BK3231Q, 25K80
-                QBD327, STM8 и т.д.), не имеющий ни какого отношения к PIC18F2580 и тем более к PIC18F24K80 разработанной канадской 
-                компанией ELM Electronics.Главный недостаток таких устройств - урезанный функционал и отсутствие поддержки старых
-                диагностических протоколов.Тем не менее на большинстве автомобилей второй половины 2010 годов и свежее данный адаптер
-                успешно работает c использованием стандартных OBD II протоколов при подключении по CAN шине.
-            </div>
-        </div>
+        
+        
     </div>
 
+    <div class="overlayCard">  <!-- обертка с затемнением сайта для карточек товара -->
+        
+        <div class="moreWrap">
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Природная артезианская вода "Природный источник" добывается в экологически чистом месте. Такую воду можно не кипятить, употребляя в первозданном виде — она полностью соответствует 1-й категории качества, что подтверждают результаты исследований Роспотребнадзора, и содержит в своем составе не только полезные природные микроэлементы и соли, но и очень редкий природный селен, который предотвращает образование в нашем организме раковых клеток.
+                    </div>
+                </div>
+            </div>    
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Питьевая артезианская вода «Живая» 19 литров проходит 9 ступенчатую водоподготовку, что позволяет назвать ее Высшей категории. 
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Питьевая вода «Кристальная» — это артезианская питьевая вода.
+                    <br>
+                    Эта натуральная природная питьевая вода добывается из артезианской скважины Апшеронского водоносного слоя, известного своим стабильным содержанием кальция, натрия и других необходимых для организма человека полезных веществ. <br> Вода «Кристальная» добывается в пригороде г. Краснодара из скважины глубиной 195 метров, проходит предварительную очистку от мельчайших частиц породы, процедуру дезинфекции ультрафиолетом и, путем озонирования, дополнительно насыщается кислородом.<br>Содержащиеся в воде «Кристальная» микроэлементы способствуют повышению иммунитета и жизненного тонуса.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Питьевая вода «Горный хрусталь» добывается из глубоководной артезианской скважины глубиной более 195м в экологически чистом горизонте подземного водного бассейна Апшеронского водоносного слоя.<br> Содержащиеся в воде микроэлементы, способствуют повышению иммунитета и жизненного тонуса. <br>Проходит 5 степеней очистки, так же вода проходит очистку через фильтр с горным хрусталем (прозрачная разновидность природного кварца).
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Вода высшей категории г. Сочи. Негазированная артезианская вода.<br> Вода содержит: серебро, натрий, магний, фтор, кальций 
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Вода Горячий ключ 2000 добыта из самого сердца нашей природы.<br> Артезианская скважина №р-2-2000 глубиной 125 м в Горячем ключе. <br> Подходит для приготовления пищи и ежедневного употребления.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Вода питьевая артезианская первой категории "Триумф" <br>Добывается из скважины №7724 глубиной 192 метра (Апшеронский водоносный слой). Уникальной эту воду делает ее природная мягкость в сочетании с высоким уровнем pH.<br> При розливе вода "Триумф" проходит лишь мягкую трехступенчатую фильтрацию, серебрение и обработку ультрафиолетом.  Производитель: ИП Магомадов О.А., г. Краснодар, Центральная усадьба КНИИСХ им. Лукьяненко
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Питьевая вода "Серебряная капля" - это натуральная природная питьевая вода с ионами серебра. <br>Она добывается из артезианской скважины Апшеронского водоносного слоя.<br>
+
+                    Для розлива воды "Серебряная капля" в 19-ти литровые бутыли применяется самое современное высокоэффективное оборудование, проводится тщательная водоподготовка. Это все позволяет сохранить ее природную структуру и оптимально сбалансированный состав солей и микроэлементов.<br>
+
+                    Вода "Серебряная капля" добывается из скважины глубиной 195 метров. Производитель: ООО "КубаньВода", РФ, г. Краснодар. Место добычи пригород г. Краснодара.<br>
+
+                    Питьевая вода "Серебряная капля" проходит жесткий контроль качества на производстве и обязательную сертификацию и соответствует всем ГОСТам и требованиям, предъявляемым к питьевой воде.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Природная питьевая ледниковая высшей категории под ТЗ Дыхание Лаго-Наки .Производитель ООО "Аква Сфера" 
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Вода питьевая природная артезианская. "Гармония жизни" <br> Скважина №2213 глубиной 177м, г. Краснодар. <br>Изготовитель ООО "Кубань вода" <br>Применяется без ограничения в качестве питьевой воды, для приготовления пищи и напитков.<br> Обработана УФ-облучением.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Ледниковая питьевая вода Дарзах поддерживает водный баланс и наполняет организм полезными микроэлементами.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Домбай - это высокоминеральная вода, добываемая из пресных подземных вод в пойме реки Теберда.<br>
+                    Бутилированная вода «Домбай» разливается на заводе в а. Джингирик – горной территории Карачаево-Черкесской Республики, лежащей выше 1500 м над уровнем моря.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Воду Жемчужина Кавказа добывают из централизованного источника водоснабжения в поселке Буково.<br> Вода проходит такой же цикл водоподготовки, как известная вода Горная Вершина. Поселок Буково является научной базой российских астрономов, которая находится на высоте 1400 метров над уровнем моря в заповедной зоне Архызского ущелья.<br>
+
+                    Жемчужина Кавказа проходит подготовку и розлив в бутыли на современной итальянском оборудовании.<br>
+
+                    Жемчужина Кавказа обладает полноценным составом для физиологии человека, в тоже время она отличается приятным вкусом, мягкостью и невероятной свежестью.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Детская вода «Веснушка» — это природная вода высшей категории качества, которая наилучшим образом удовлетворяет потребность детского организма в воде, подходит как для питья, так и для приготовления пищи. Обладая идеальным минеральным составом и мягким вкусом, замечательно утоляет жажду любимых непосед. <br>
+                    Вода высшей категории (по СанПиН № 214.1116-02) — это чистейшие подземные воды, разлитые непосредственно в месте добычи и характеризующиеся сбалансированностью минерального состава, физиологической полноценностью. Восполняет недостаток поступления с пищей жизненно важных биогенных элементов, отсутствие которых или избыток может отрицательно сказаться на здоровье. Вода из Апшеронского водоносного горизонта (добывается на глубине 175м) идеальна по своему составу и наиболее физиологична для человека (подтверждено Пятигорским ГНИИ курортологии ФМБА России). <br>Горизонт формируется ледниковой водой с вершин гор Главного Кавказского хребта. Рожденная в недрах земли и несущая положительный заряд энергии и бодрости от самой природы, проходя через карстовые породы, естественные фильтры земельных глубин, обретает дополнительные полезные свойства, кристальную чистоту и изумительный вкус.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Bодa «Кубай»  созданa самой природой. <br>
+                    Целостная генетическая структура талой воды «Кубай» прекрасным образом усваивается клетками, хорошо увлажняя и питая их.<br>
+                    Содержание фторидов, магния, калия, кальция, натрия и других полезных веществ обусловливает укрепляющее действие на сердечно-сосудистую, иммунную и эндокринную систему.<br>
+                    pH воды «Кубай» на уровне 7,0–7,4 обеспечивает стабильное кислотно-щелочное равновесие жидкостей в организме человека.<br>
+                    Согласно исследованиям профессора М. В. Курика из Института экологии человека, талая вода снижает энергозатраты на усвоение лекарственных препаратов (главным образом витаминов и ферментов), что влияет на результативность лечения.<br>
+                    Вода «Кубай» является антиоксидантом, ее регулярный прием может способствовать замедлению процесса старения тканей.<br>
+                    Исключительная чистота обеспечивает приятный вкус.<br>
+                    Вода «Кубай» помогает раскрывать все оттенки вкуса чая и кофе.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Горная питьевая вода Горная вершина добывается на высоте 1 100 м над уровнем моря в поселке Нижний Архыз (Карачаево-Черкесская республика), на границе с Тебердинским биосферным заповедником. Экологическую чистоту этого места десятки лет патронирует ЮНЕСКО, признавая его одним из заповедных уголков Земли.<br>
+
+                    Благодаря чистоте водного месторождения, вода ГОРНАЯ ВЕРШИНА официально признана «экологически чистой и безопасной» на международном конкурсе «Pure Production».Ее производитель компания АКВАЛАЙН включена во Всероссийский реестр производителей натуральной и безопасной продукции, отвечающей самым высоким экологическим требованиям.<br>
+
+                    ГОРНАЯ ВЕРШИНА имеет уникальный состав, отличное качество и вкус. Вода ГОРНАЯ ВЕРШИНА содержит 16 важнейших для человека микроэлементов и макроминералов (главная характеристика качества, вкуса и полезности воды). При этом ГОРНАЯ ВЕРШИНА имеет естественную низкую минерализацию и рекомендована к ежедневному употреблению Пятигорским ГНИИ Курортологии.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Президиум - это вода родниковых источников Лаго Наки и она добывается из карстовых родников прямо на плато. Особая очистка, повышенное кислородосодержание. <br>
+
+                    Каждая бутыль в процессе производства проходит строжайший производственный контроль и снабжается паспортом с индивидуальным номером, что позволяет вам быть уверенными в качестве каждой единицы!
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    Талая питьевая вода "Пилигрим" содержит лёгкий водород (протий), который обеспечивает высокую жизнеспособность этой воды, благодаря чему "Пилигрим" называют "живой водой". <br> Срок годности в закрытой таре – 1 год.
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                <div class="txt">
+                    По месту происхождения – АРХЫЗ No52/2 с 2003 года.<br>
+                    По качеству – для ее очистки используется совершенно новая технология в водной отрасли – керамическая фильтрация.<br>
+                    Керамическая фильтрация на 99,9% гарантирует очистку от всех посторонних органических и неорганических примесей. При этом состав минеральной воды сохраняется, а вода становится микробиологически чистой на 99,9%
+                </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Вода Эльбрусинка ДЕТСКАЯ – полезная вода. Она содержит 16 природных макро и микроминералов, которые нужны растущему организму как кирпичи для стройки дома. Например, кальций способствует укреплению костей и формирует скелет, магний участвует в 300 функциях организма, ответственных за рост ребенка, и регулирует работу сердца и выработку энергии, натрий влияет на работу мышц и сердца, поддерживает постоянное давление и т.д. Каждый минерал воды Эльбрусинка ДЕТСКАЯ участвует в десятках процессов и очень важен для роста и естественного развития ребенка и подростка.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        AquaWork 36tdn White <br>
+                        Самые популярные на рынке модели кулеров, настольные аппараты с электронной системой охлаждения воды в простом пластиковом корпусе отличаются друг от друга только дизайном, внутри они устроены одинаково: <br>
+
+                        бак емкостью 1 литр для горячей воды с мощностью нагрева 400-500 Вт (рассчитан на обеспечение потребностей 5-7 человек); <br>
+                        успевают охладить за час 4-5 стаканов воды на 12-15ºС ниже температуры окружающей среды;<br>
+                        два краника (обычно типа "нажим кружкой");<br>
+                        рассчитаны на работу с 12 или 19-литровой бутылью;<br>
+                        в ряде моделей допускается установка стаканодержателя на шурупах;<br>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Настольный кулер для воды Aqua Work 0.7-TD c простой электронной системой охлаждения и стандартным баком нагрева - хорошее решение для использования в доме или небольшом офисе, там, где не нужно гнаться за рекордами.
+                        <br>
+                        По своим техническим характеристикам эта модель - полный аналог диспенсеров 36 серии, де-факто стандарта настольных электронных кулеров, которые широко представлены в ассортиментом ряде любого производителя.
+                        <br>
+                        Типовой бак нагрева емкостью 1 литр и мощностью 700 Вт способен нагреть до температуры 95-96 градусов 7 и более литров за час;<br>
+                        Термоэлектронное охлаждение, работающее на основе эффекта Пельтье, охладил на 12-14 градусов ниже комнатной температуры 4-5 стаканов за час;<br>
+                        Рассчитан на использование с любыми 12, 19 или 23 -литровыми бутылями с питьевой водой;<br>
+                        Два краника типа "нажим кружкой";<br>
+                        Привлекательное оформление - белый или серебристый пластиковый корпус вместе с черным каплесборником и бутылеприемником;<br>
+                        Обратите внимание: аппарат НЕ рассчитан на подключение стандартного офисного аксессуара - стаканодержателя, отверстий для крепления - НЕТ;
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Миниатюрный бюджетный кулер для воды Aqua Work 0.7-LD/B со стандартным нагревом и электронным охлаждением.<br>
+
+                        Пластиковый корпус по высоте ниже привычного для диспенсеров 1 метра - всего 86 см, обратите внимание!<br>
+                        Нагревает за 1 час не менее 7 литров питьевой воды из установленной бутыли до температуры 90-96 градусов.<br>
+                        Успеет остудить в течении часа до температуры 12 градусов всего 4-5 стаканов, как и другие электронные диспенсеры.
+                        Хотите больше? Тогда Вам нужен компрессорный кулер.<br>
+                        Два светодиодных индикатора в правом верхнем углу отображают информацию о состоянии нагрева и охлаждения.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Новая экономичная модель настольного куллера для воды Aqua Work 36TDN-ST с электронной системой охлаждения разработана на основе полюбившегося всем корпуса Аква Ворк 36 TDN. <br>
+
+                        Этот небольшой симпатичный аппарат теперь оснащен не только электронной системой охлаждения, но и турбо-нагревом воды и может работать в 2х режимах:
+                        <br>
+                        1. Привычный диспенсер - постоянно поддерживает температуру горячей воды в заданном диапазоне - 70-96 ºС. Если вода кажется Вам не достаточно горячей и требуется поднять ее температуру до максимальной, просто нажмите кнопку турбонагрева и меньше чем за пару минут аппарат обеспечит Вас водой, разогретой до 97 градусов, а затем снова вернется к обычному режиму работы.
+                        <br>
+                        2. Режим экономии: - при включении функции "ЭКО" постоянный подогрев отключается и кулер работает только на охлаждение питьевой воды, тем самым, обеспечивая экономию основной доли электроэнергии, затрачиваемой именно на нагрев.<br>
+
+                        Когда Вам понадобится горячая вода, достаточно нажать на кнопку ТУРБО-нагрева и через несколько минут Вы получите воду, подогретую до температуры 97 градусов, после чего диспенсер снова перейдет в режим экономии электроэнергии, а температура в горячем бачке будет понемногу снижаться в ожидании следующего использования турбонагрева. Подобный алгоритм позволяет существенно сократить расходы на эксплуатацию кулера.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Миниатюрный напольный аппарат для раздачи подогретой и охлажденной бутилированной питьевой воды Aqua Work 0.7-LDR. Очень компактный водный диспенсер c функцией нагрева, электронной системой охлаждения и с высотой корпуса от пола до воронки всего 85,5 см (у подавляющего большинства напольных кулеров корпус в высоту достигает 1 метра).
+                        <br>
+                        Маленький симпатичный аппарат легко найдет свое место в Вашем офисе или учреждении, квартире или на даче.
+                        <br>
+                        Голубое окошко в виде капельки на нижней передней панели кулера Аква Ворк 07-LDR в сочетании с краниками для подачи воды и каплесборником черного цвета придает ему дополнительный шарм и оригинальность.
+                        <br>
+                        Нагревает за час порядка 7 литров питьевой воды из установленной сверху бутыли до температуры 92-95 градусов.
+                        Охлаждает за час до температуры 12-15 градусов всего 4-5 стаканов - обычные для электронной системы охлаждения показания.<br>
+                        Встроенный шкафчик спрятан за полупрозрачной дверцей с отверстием в виде капельки, он не годится для хранения продуктов, нуждающихся в охлаждении. Сюда можно положить чай, кофе, сахар, кружки или одноразовые пластиковые стаканчики.<br>
+                        К диспенсеру можно прикрепить стаканодержатели двух типов: как крепящиеся к корпусу шурупами, так и прилипающие за счет встроенного магнита. Стаканодержатели, как и пластиковые стаканчики, необходимо покупать отдельно.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Миниатюрный напольный аппарат для раздачи подогретой и охлажденной бутилированной питьевой воды Aqua Work 0.7-LDR. Очень компактный водный диспенсер c функцией нагрева, электронной системой охлаждения и с высотой корпуса от пола до воронки всего 85,5 см (у подавляющего большинства напольных кулеров корпус в высоту достигает 1 метра).
+                        <br>
+                        Маленький симпатичный аппарат легко найдет свое место в Вашем офисе или учреждении, квартире или на даче.
+                        <br>
+                        Голубое окошко в виде капельки на нижней передней панели кулера Аква Ворк 07-LDR в сочетании с краниками для подачи воды и каплесборником черного цвета придает ему дополнительный шарм и оригинальность.
+                        <br>
+                        Нагревает за час порядка 7 литров питьевой воды из установленной сверху бутыли до температуры 92-95 градусов.
+                        Охлаждает за час до температуры 12-15 градусов всего 4-5 стаканов - обычные для электронной системы охлаждения показания.<br>
+                        Встроенный шкафчик спрятан за полупрозрачной дверцей с отверстием в виде капельки, он не годится для хранения продуктов, нуждающихся в охлаждении. Сюда можно положить чай, кофе, сахар, кружки или одноразовые пластиковые стаканчики.<br>
+                        К диспенсеру можно прикрепить стаканодержатели двух типов: как крепящиеся к корпусу шурупами, так и прилипающие за счет встроенного магнита. Стаканодержатели, как и пластиковые стаканчики, необходимо покупать отдельно.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Напольный кулер для воды AquaWork 16-L/HLN с производительной компрессорной системой охлаждения. <br>
+
+                        Хорошие для такого класса аппаратов показатели по нагреву воды: 700 Вт, не менее 7 литров в час с температурой 90-96ºС;<br>
+                        Не менее 2 литров холодной воды в час с температурой не более 7-10ºС;<br>
+                        Корпус из стали с плавными закругленными линиями позволяет использовать любые навесные стаканодержатели: и на шурупах и на магнитах;<br>
+                        Удобное управление краниками подачи - нажим кружкой.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Классический напольный кулер для воды Aqua Work 16-L - без украшений, но с мощным нагревом и компрессорным охлаждением!<br>
+                        Нагрев - не менее 5 литров воды за час;<br>
+                        Охлаждение при помощи встроенного компрессора - 2-3 литра в час с температурой до 7ºС;<br>
+                        Расположенные сзади два переключателя позволяют включать и выключать блоки нагревателя и охлаждения по отдельности;<br>
+                        Любые держатели стаканчиков на Ваш выбор - и магнитные, и крепящиеся к корпусу на шурупах;<br>
+                        Прочный корпус, выполненный из нержавейки, покрашен в белый цвет;<br>
+                        Краники типа нажим кружкой;
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Белоснежный напольный кулер для воды Aqua Work 95-L с нагревом и компрессорным охлаждением в монолитном исполнении:<br>
+
+                        Нагревательный элемент мощностью 550 Ватт в стальном баке объемом 1 литр<br>
+                        Не менее 5 литров в час горячей воды с температурой ~95 градусов<br>
+                        До 3 и более литров по-настоящему холодной воды в час благодаря компрессору<br>
+                        Две большие кнопки для подачи воды<br>
+                        Белоснежный корпус из стали и пластика<br>
+                        Боковые панели позволяют закрепить любые типы податчиков стаканов.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Напольный кулер для воды Aqua Work V908 с компрессорной системой охлаждения, стройным корпусом и миниатюрным встроенным шкафчиком. <br>
+                        Габариты (ширина х глубина х высота) - всего 310х320х960 мм<br>
+                        Аппаратура нагрева мощностью 420 Вт позволяет нагревать за час не менее 5 литров до температуры 90 и более градусов<br>
+                        Компрессорное охлаждение - 95 Вт, не менее 2 литров воды в час с температурой 10 и менее градусов<br>
+                        Вынесенные на верхнюю грань корпуса 3 удобные кнопки для розлива соответственно горячей воды, воды с температурой чуть ниже комнатной и для холодной<br>
+                        Защелка от случайного нажатия горячей клавише (другое название - "защита детей от ожогов")<br>
+                        Белоснежный стальной корпус с элегантными вставками из черного пластика<br>
+                        Возможность использования стаканодержателей обоих типов - и на шурупах, и на магнитах<br>
+                        И миниатюрный шкафчик, его размеры (Ш х Г х В) - 230х170х180 мм, всего 6,5 литров
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Классический напольный кулер Aqua Work 16-L/EN с нагревом и компрессорной системой охлаждения воды (не менее 2 литров холодной воды в час с температурой 7-10 ºС).<br>
+
+                        Cтандартный бак горячей воды емкостью 1 литр и система нагрева мощностью 700 Вт рассчитаны на установку как в домашние условия, так и в малом и среднем офисе (до 10-15 человек, если сотрудников больше - рекомендуем приобретать кулеры с баками большей емкости или диспенсеры с турбонагревом);<br>
+                        Aвтоматическое управление нагревом и охлаждением;
+                        установка сверху бутыли с питьевой водой емкостью 19 или 12 литров;<br>
+                        Два эргономичных краника типа "нажим кружкой";
+                        минималистский интерфейс;<br>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Стандартная напольная модель кулера для воды Aqua Work 16-L/ЕN с нагревом и компрессорной системой охлаждения. Удобное управление кранами подачи типа нажим кружкой. Одна из самых популярных моделей в ассортименте Аква-Маркета. <br>
+
+                        Бак горячей воды емкостью 1 литр и система нагрева мощностью 700 Вт рассчитаны на установку диспенсера как домой, так и в малом и среднем офисе (до 10-15 человек, если сотрудников больше - рекомендуем приобретать кулеры с баками большей емкости или диспенсеры с турбонагревом)
+                        <br>
+                        Полнофункциональный аппарат, высокая продуктивность охлаждения за счет работы компрессора (тот же принцип, что и у обычного бытового холодильника). Система охлаждения не зависит от температуры внутри помещения или уровня его запыленности. Производительность холодильной системы - не менее 2 литров воды в час с температурой 7-10 градусов.
+                        <br>
+                        Корпус из стали (плюс вставки из пластика) стандартной высоты - 96 см. Возможно использование стаканодержателей двух типов: и с креплением на шурупах и с использованием магнита. Пустое место внизу аппарата никак не используется.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Напольный кулер Aqua Work 16-L/EN-ST с производительной компрессорной системой охлаждения воды оснащен несколькими дополнительными опциями:
+                        <br>
+                        Кнопкой включения ТУРБО-нагрева;<br>
+                        Встроенным ЭКО-номичным режимом потребления электроэнергии;<br>
+                        Индикатором текущей температуры воды в горячем и холодном баках;<br><br>
+                        Система нагрева мощностью 700 Вт позволяет получить не менее 6 литров в час воды, нагретой до температуры 95-97 градусов. Кнопка ТУРБО предназначена для принудительного включения нагрева, делая аппарат похожим на электрический чайник-термопот.<br>
+
+                        Охлаждение при помощи компрессора выдает не менее 2 литров воды в час с температурой до 7 градусов.<br>
+
+                        Бутыль с водой устанавливается сверху, вместе со стандартной 19-литровой тарой общая высота аппарата 960мм + 420мм = 1380мм.<br>
+
+                        Корпус выполнен из стали, стаканодержатели подходят любые, как c креплением на магните, на и на шурупах.
+                        <br>
+                        Краники типа "нажим кружкой" - самый эргономичный и "естественный" вариант набора воды.
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Кулеры с нижней системой загрузки становятся все популярнее, несмотря на более высокую стоимость по сравнению с привычной конструкцией (установка бутыли сверху) и это легко объяснить:
+                        <br>
+                        Меньшие физические усилия при очередной замене бутыли<br>
+                        Прекрасный внешний вид<br>
+                        И большее внимание при производстве, а, следовательно, и высокое качество изготовления и сборки<br>
+                        Новая модель в каталоге Аква Маркета с установкой бутыли снизу - диспенсер Aqua Work 1447-S с нагревом и компрессорным охлаждением воды.<br>
+
+                        Нагрев не менее 6 литров за 1 час до температуры 90-96 градусов<br>
+                        Охлаждение за час не менее 2-2,5 литров воды при помощи компрессора мощностью 100 Вт<br>
+                        Защелка для защиты от случайного нажатия (еще ее называют "защитой от ожогов") на "горячей" кнопке<br>
+                        Неоновая подсветка зоны розлива, помогающая использовать кулер ночью или в затемненных помещениях<br>
+                        Светодиодная индикация: подключение к сети, нагрев, охлаждение и уровень воды в бутыли<br>
+                        Возможность прикрепить к корпусу стаканодержатели двух типов: и магнитные, и на шурупах<br>
+                        Предусмотрено использование как привычных 19-литровых бутылей, так и иногда встречающихся 3-галлоновых (12 литров)
+                    </div>
+                </div>
+            </div>
+            <div class="scpec">
+                <div class="scpecWrapper">
+                    <div class="modal__close">&times;</div>
+                    <div class="txt">
+                        Кулеры с загрузкой снизу все популярнее, несмотря на свою стоимость, и это несложно объяснить:
+                        <br>
+                        Простота замены бутыли<br>
+                        Привлекательный внешний вид<br>
+                        И великолепное качество изготовления и сборки<br>
+                        Напольный компрессорный кулер для воды Aqua Work R71-T отлично смотрится в металлическом черном корпусе с зеркальными вставками.<br><br>
+
+                        3 кнопки: для подачи холодной, горячей и воды напрямую из распределительного бака, с температурой на 2-3 градуса ниже комнатной<br>
+                        Нагрев: не менее 4 литров за 1 час до температуры 85-95 градусов<br>
+                        Охлаждение: 2-3 литра в час до температуры 7-10 градусов (мощность компрессора - 100 Вт)<br>
+                        На кнопке горячей воды - защита от случайного нажатия ("защита от детей")<br>
+                        Нагрев и охлаждение отключаются по отдельности тумблерами на задней стенке диспенсера<br>
+                        4 светодиодных идикатора, отображающие подключение к 220В, работу систем нагрева и охлаждения, плюс датчик опустошении бутыли<br>
+                        К черному корпуса кулера Аква Ворк R71-T отлично подходят серебристые и черные стаканодержатели с креплением на магнитах
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
     <a href="#up" class="pageup">
         <img src="icons/verh.png" alt="up">
     </a>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
     <script src="js/script.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     
-        ym(61568953, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true,
-            ecommerce:"dataLayer"
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/61568953" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </body>
 </html>

@@ -1,0 +1,38 @@
+.overlayCard {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(225,225,225, 1);
+    z-index: 10;
+    .moreWrap {
+       position: relative;
+       width: 100%;
+       height: 100%;
+        .scpec{
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85%;
+            height: 85%;
+            
+            .scpecWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                height: 100%;
+                font-weight: 300;
+                font-size: calc(10px + 14 * ((100vw - 320px) /(1366 - 320)));
+                color: black;
+            }    
+        }
+        .scpec:nth-child(1n+1) {
+            display: none;
+        }
+        
+    }
+}

@@ -5,16 +5,27 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+.grid {
+    width: calc(294px + 867 * ((100vw - 320px) /(1366 - 320)));
+    margin: 0 auto;
 }
 @import "blocks/header";
 @import "blocks/promo";
-@import "blocks/bigBG";
-@import "blocks/product";
-@import "blocks/textPart";
+@import "blocks/goods";
+@import "blocks/aboutUs";
+@import "blocks/delivery";
 @import "blocks/footer";
-@import "blocks/hamburger";
 @import "blocks/modal";
 @import "blocks/forms";
 @import "blocks/pageup";
-/* @import "blocks/media"; */
+@import "blocks/overlayCard";
+
+

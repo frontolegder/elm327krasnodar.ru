@@ -1,115 +1,26 @@
 .promo {  
-    position: relative;
-    width: 100vw;
-    height: 280px;
-    &_img {
-/*         width: 100%;
-        height: 280px;
-        background-image: url(../../img/promo2000.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        z-index: -1; */
-
-
-        width: 100%;
-        position: fixed;
-        transform: translateY(-50px);
-        z-index: -1;
-    }
-    &_descr {
-        padding: 0 70px 0 70px;
-        transform: translateY(23px);
-        margin: 0 auto;
+    width: 100%;
+    height: calc(245px + 310 * ((100vw - 320px) /(1366 - 320)));
+    padding-top: calc(132px + 85 * ((100vw - 320px) /(1366 - 320)));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center + 10px;
+    .whiteCard{
+        width: calc(170px + 374 * ((100vw - 320px) /(1366 - 320)));
+        height: calc(78px + 185 * ((100vw - 320px) /(1366 - 320)));
+        background-color: #fff;
+        padding: 0 calc(15px + 68 * ((100vw - 320px) /(1366 - 320))) 0 calc(8px + 35 * ((100vw - 320px) /(1366 - 320)));
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        max-width: 1030px;
-        height: 230px;
-        color: #ffffff;
-        h1 {
-            font-size: 30px;
-            letter-spacing: 1.8px;
-            margin: 0;     
-        } 
-        .main {
-        
-            font-size: 25px; 
-            letter-spacing: 1.2px;          
-            margin-top: 20px;   
+        align-items: center;
+        .txt{
+            font-weight: normal;
+            font-size: calc(12px + 26 * ((100vw - 320px) /(1366 - 320)));
+            color: #006DAC;
+            text-align: left;
+            span {
+                color:#FF058C;
+            }
         }
-        .vkrd {
-            font-size: 25px; 
-            letter-spacing: 1.2px;             
-            margin-top: 20px;   
-        }
-        .paragraphs1 {
-            font-size: 25px; 
-            letter-spacing: 1.2px;          
-            margin-top: 20px;
-            margin-left: 100px;
-        }
-        .paragraphs2 {
-            font-size: 25px; 
-            letter-spacing: 1.2px;         
-            margin-top: 20px;
-            margin-left: 100px;
-        }
-    }
-}
-@media (max-width:767px) {
-    .promo {
-        &_descr {
-            transform: translateY(50px);
-            max-width: 576px;
-            h1 {
-                font-size: 23px;
-                margin: 0;     
-            } 
-            .main {
-                font-size: 20px;  
-                margin-top: 13px; 
-            }
-            .vkrd {
-                font-size: 20px; 
-                margin-top: 13px; 
-            }
-            .paragraphs1 {
-                font-size: 20px; 
-                margin-left: 15px;
-                margin-top: 13px;
-            }
-            .paragraphs2 {
-                font-size: 20px; 
-                margin-left: 15px;
-                margin-top: 13px;
-            }
-        }    
-    }
-}
-@media (max-width:575px) {
-    .promo {
-        &_descr {
-            padding: 0 15px 0 15px;
-            max-width: 400px;
-            h1 {
-                font-size: 15px;               
-                margin: 0;     
-            } 
-            .main {
-                font-size: 15px;                
-            }
-            .vkrd {
-                font-size: 15px;               
-            }
-            .paragraphs1 {
-                font-size: 15px;             
-                margin-left: 15px;
-            }
-            .paragraphs2 {
-                font-size: 15px; 
-                margin-left: 15px;
-            }
-        }           
     }
 }

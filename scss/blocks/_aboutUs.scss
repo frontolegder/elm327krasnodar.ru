@@ -1,0 +1,51 @@
+.aboutUs {
+    background-image: radial-gradient(61.74% 92.42% at 50% 7.58%, #6DBDF7 0%, #4989EA 100%);;
+    padding: calc(24px + 16 * ((100vw - 320px) /(1366 - 320))) 0;
+    .aboutUsTitle{
+        text-align: center;
+        font-weight: 500;
+        font-size: calc(12px + 24 * ((100vw - 320px) /(1366 - 320)));
+        margin-bottom: calc(15px + 15 * ((100vw - 320px) /(1366 - 320)));
+        color: white;
+    }
+    .iconsWrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .adventeges {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 10px;
+            
+            .icons {
+                width: calc(41px + 48 * ((100vw - 320px) /(1366 - 320)));
+                height: calc(53px + 63 * ((100vw - 320px) /(1366 - 320)));
+                img {
+                    width: 100%;
+                }
+            }
+            .icDescr {
+                height: calc(40px + 60 * ((100vw - 320px) /(1366 - 320)));
+                text-align: center;
+                font-weight: normal;
+                font-size: calc(10px + 14 * ((100vw - 320px) /(1366 - 320)));
+                margin-top: calc(12px + 20 * ((100vw - 320px) /(1366 - 320)));
+                color: #FFFFFF;
+            }
+        }
+        
+    }
+    @media (max-width: 840px) {
+        .iconsWrap {
+            width: 100%;
+            justify-content: space-around;
+            .adventeges {
+                margin: 0 0;
+                width: calc(130px + 160 * ((100vw - 320px) /(840 - 320)));
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.delivery {
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: calc(24px + 16 * ((100vw - 320px) /(1366 - 320))) 0;
+    .delivWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .destrib {
+            width: 100%;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: calc(11px + 13 * ((100vw - 320px) /(1366 - 320)));
+            color: black;
+        }
+        .aqualine {
+            padding-top: calc(8px + 8 * ((100vw - 320px) /(1366 - 320)));
+            width: calc(71px + 86 * ((100vw - 320px) /(1366 - 320)));
+            height: calc(27px + 32 * ((100vw - 320px) /(1366 - 320)));
+            img {
+                width: 100%;
+            }
+        }
+        .delivTitle {
+            padding-top: calc(15px + 35 * ((100vw - 320px) /(1366 - 320)));
+            width: 100%;
+            font-weight: 500;
+            font-size: calc(12px + 24 * ((100vw - 320px) /(1366 - 320)));
+            text-align: center;
+            color: #3B3B3B;
+        }
+        .infoVillage {
+            padding-top: calc(8px + 8 * ((100vw - 320px) /(1366 - 320)));
+            width: 100%;
+            text-align: left;
+            font-weight: 400;
+            font-size: calc(11px + 13 * ((100vw - 320px) /(1366 - 320)));
+            color: black;
+        }
+        .btnWrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: calc(10px + 20 * ((100vw - 320px) /(1366 - 320)));
+            a {
+                border: none;
+                width: calc(178px + 262 * ((100vw - 320px) /(1366 - 320)));
+                height: calc(23px + 30 * ((100vw - 320px) /(1366 - 320)));
+                border-radius: 2px;
+                background-color:  #52A5F2;
+                color: white;
+                font-weight: 300;
+                font-size: calc(10px + 14 * ((100vw - 320px) /(1366 - 320)));
+                text-decoration: none;
+                padding-top: calc(6px + 6 * ((100vw - 320px) /(1366 - 320)));
+                text-align: center;
+                cursor: pointer;
+                &:hover {
+                    background-color:  #74BCFF;
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$comment = $_POST['comment'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -13,12 +14,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'elm327krasnodar@mail.ru';                 // Наш логин
-$mail->Password = 'Gelo58917071';                           // Наш пароль от ящика
+$mail->Username = 'obrashenie2021@mail.ru';                 // Наш логин
+$mail->Password = 'Kapelka2021';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('elm327krasnodar@mail.ru', 'elmkrasnodar');   // От кого письмо 
+$mail->setFrom('obrashenie2021@mail.ru', 'KapelkA');   // От кого письмо 
+$mail->addAddress('Stoa005@mail.ru');
 $mail->addAddress('konovalov.o.i@mail.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -28,12 +30,13 @@ $mail->addAddress('konovalov.o.i@mail.ru');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Обращение с сайта';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+	Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+	E-mail: ' . $email . '<br>
+	Обращение: ' . $comment . '';
 
 if(!$mail->send()) {
     return false;

@@ -1,10 +1,11 @@
 .overlay {
     display: none;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     background-color: rgba(0,0,0, .80);
+    z-index: 10;
 }
 .modal {
     
@@ -19,7 +20,7 @@
     &__close {
         position: absolute;
         top: 0;
-        right: -30px;
+        right: -10px;
         font-size: 41px;
         line-height: 21px;
         color: red;
@@ -28,7 +29,7 @@
     &__subtitle {
         color: #0d0d0d;
         font-size: 19px;
-        font-weight: 700;
+        font-weight: 400;
         text-align: center;
     }
     &__descr {
